@@ -1,0 +1,15 @@
+.footimg {
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+  mix-blend-mode: difference;
+  border-radius: 10px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #086db5;
+  color: white;
+}
