@@ -1,16 +1,9 @@
-// import { StrictMode } from "react";
-// import { createRoot } from "react-dom/client";
-// import Header from "./miniProject/header";
-// import Main from "./miniProject/main";
-// import Footer from "./miniProject/footer";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import Add from "./classwork/27.2/main";
 
-// createRoot(document.getElementById("root")!).render(
-//   <StrictMode>
-//     <Header />
-//     <Main />
-//     <Footer />
-//   </StrictMode>
-// );
-//           /\
-//           ||
-//example    ||
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <Add/>
+  </StrictMode>
+);

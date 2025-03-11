@@ -9,7 +9,7 @@ function Header() {
 
       <div className="header-text">
         <h1>My blog</h1>
-        <p>simple and wonderfull stuyding </p>
+        <p>simple and wonderful studying</p>
       </div>
 
       <nav>

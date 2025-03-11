@@ -22,27 +22,9 @@ function Main() {
         <p className="p">opyblicated in 2024, 1 september</p>
       </div>
 
-      <form className="add">
-        <h2>share you opinion</h2>
-        <input type="text" placeholder="type a text" />
-        <button>enter</button>
-      </form>
+      
     </main>
   );
 }
 
 export default Main;
-
-// import { StrictMode } from "react";
-// import { createRoot } from "react-dom/client";
-// import Header from "./miniProject/header";
-// import Main from "./miniProject/main";
-// import Footer from "./miniProject/footer";
-
-// createRoot(document.getElementById("root")!).render(
-//   <StrictMode>
-//     <Header />
-//     <Main />
-//     <Footer />
-//   </StrictMode>
-// );
