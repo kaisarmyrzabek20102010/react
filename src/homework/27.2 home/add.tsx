@@ -1,18 +1,18 @@
 import { useState } from "react";
 
 export default function UserInfo({ role, isPremium }) {
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isSubscribed, setIsSubs] = useState(false);
   const [temperature, setTemperature] = useState(20);
 
-  // Map roles to display text
+  // Role Mapping
   const roleMapping = {
     admin: "Админ",
     user: "Қолданушы",
     guest: "Қонақ",
   };
-  const roleText = roleMapping[role] || "Белгісіз";
+  const roleText = roleMapping[role] || "admin";
 
-  // Function to determine temperature text and color
+  // Function to get temperature text and color
   const getTemperatureInfo = (temp) => {
     if (temp > 40) return { text: "Өте ыстық", color: "text-red-600" };
     if (temp >= 30) return { text: "Ыстық", color: "text-orange-600" };
@@ -26,34 +26,19 @@ export default function UserInfo({ role, isPremium }) {
 
   return (
     <div className={`p-4 rounded ${bgStyle}`}>
-      {/* User Role */}
-      <p className="text-lg font-semibold text-blue-600">{roleText}</p>
+      <p>{roleText}</p>
 
-      {/* Temperature Display */}
-      <p className={`text-xl font-bold ${tempColor}`}>{tempText}</p>
+      <p>
+        {temperature}°C - {tempText}
+      </p>
 
-      {/* Subscription Button */}
-      <button
-        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded"
-        onClick={() => setIsSubscribed((prev) => !prev)}
-      >
+      <button onClick={() => setIsSubs((prev) => !prev)}>
         {isSubscribed ? "Жазылымнан бас тарту" : "Жазылу"}
       </button>
 
-      {/* Temperature Controls */}
-      <div className="mt-2 flex gap-2">
-        <button
-          className="px-2 py-1 bg-gray-300 rounded"
-          onClick={() => setTemperature((prev) => prev + 5)}
-        >
-          +5°
-        </button>
-        <button
-          className="px-2 py-1 bg-gray-300 rounded"
-          onClick={() => setTemperature((prev) => prev - 5)}
-        >
-          -5°
-        </button>
+      <div>
+        <button onClick={() => setTemperature((prev) => prev + 5)}>+5°</button>
+        <button onClick={() => setTemperature((prev) => prev - 5)}>-5°</button>
       </div>
     </div>
   );
