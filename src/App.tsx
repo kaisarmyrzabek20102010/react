@@ -42,7 +42,7 @@
 
 //   return (
 //     <div>
-//       <h1>❌ 404 Not Found</h1>
+//       <h1>404 Not Found</h1>
 //       <button onClick={() => navigate(-1)}>Go Back</button>
 //     </div>
 //   );
