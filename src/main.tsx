@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './exam11/add';
+import App from './classwork/add';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
