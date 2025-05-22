@@ -314,7 +314,7 @@ body {
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 250px;
   border-radius: 0.75rem;
   margin-bottom: 1rem;
 }

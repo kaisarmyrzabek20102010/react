@@ -1,8 +1,8 @@
 import "./style.css";
 import React, { useState } from "react";
-import htm from '../assets/qwerty.jpg'
-import html from '../assets/asdfg.png'
-import css from '../assets/zxcvbn.png'
+import htm from "../assets/qwerty.jpg";
+import html from "../assets/asdfg.png";
+import css from "../assets/zxcvbn.png";
 
 const skills = [
   { name: "HTML/CSS", level: 95, category: "frontend" },
@@ -233,48 +233,46 @@ const HomePage = () => {
 
             <div className="projects-grid">
               <div className="project-card">
-                <img src={htm} />
+                <a href="https://kaisarmyrzabek20102010.github.io/proekt/1/index.html">
+                  <img src={htm} />
+                </a>
                 <div className="tags">
-                  <span className="tag">React</span>
-                  <span className="tag">TailwindCSS</span>
-                  <span className="tag">Supabase</span>
+                  <span className="tag">Css</span>
+                  <span className="tag">Html</span>
                 </div>
                 <h3 className="project-title">HTML/css</h3>
                 <p className="project-description">
                   A beautiful landing page app using React and Tailwind.
                 </p>
                 <div className="project-links">
-                  <a href="#">🔗 GitHub</a>
-                  <a href="#">🌐 Live</a>
+                  <a href="https://github.com/kaisarmyrzabek20102010/proekt/settings/pages">
+                    🔗 GitHub
+                  </a>
                 </div>
               </div>
 
               <div className="project-card">
-                <img
-                  src={css}
-                  alt="Analytics Dashboard"
-                />
+                <a href="">
+                  <img src={css} alt="Analytics Dashboard" />
+                </a>
                 <div className="tags">
-                  <span className="tag">TypeScript</span>
-                  <span className="tag">D3.js</span>
-                  <span className="tag">Next.js</span>
+                  <span className="tag">Tailwind</span>
+                  <span className="tag">React</span>
                 </div>
-                <h3 className="project-title">Orbit Analytics Dashboard</h3>
+                <h3 className="project-title">React</h3>
                 <p className="project-description">
                   Interactive analytics dashboard with data visualization and
                   filtering capabilities.
                 </p>
                 <div className="project-links">
-                  <a href="#">🔗 GitHub</a>
-                  <a href="#">🌐 Live</a>
+                  <a href="https://github.com/kaisarmyrzabek20102010/proekt/settings/pages">
+                    🔗 GitHub
+                  </a>
                 </div>
               </div>
 
               <div className="project-card">
-                <img
-                  src={html}
-                  alt="E-commerce Platform"
-                />
+                <img src={html} alt="E-commerce Platform" />
                 <div className="tags">
                   <span className="tag">React</span>
                   <span className="tag">Node.js</span>
@@ -286,8 +284,9 @@ const HomePage = () => {
                   payment processing.
                 </p>
                 <div className="project-links">
-                  <a href="#">🔗 GitHub</a>
-                  <a href="#">🌐 Live</a>
+                  <a href="https://github.com/kaisarmyrzabek20102010/proekt/settings/pages">
+                    🔗 GitHub
+                  </a>
                 </div>
               </div>
             </div>
