@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './classwork/add'; // Explicit extension
+import App from './Project/App'; // Use App for routing
 import './index.css';
 
 const rootElement = document.getElementById('root');
@@ -11,3 +11,17 @@ ReactDOM.createRoot(rootElement).render(
     <App />
   </React.StrictMode>
 );
+
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './Project/App'; // Use App for routing
+// import './index.css';
+
+// const rootElement = document.getElementById('root');
+// if (!rootElement) throw new Error('Failed to find the root element');
+
+// ReactDOM.createRoot(rootElement).render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
