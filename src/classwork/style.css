@@ -1,0 +1,382 @@
+/* === General Reset === */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* === Header === */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.header h1 {
+  color: blueviolet;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mode-btn {
+  border: none;
+  background: blueviolet;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* === Home Section === */
+.home {
+  text-align: center;
+  padding: 80px 20px 50px;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  background-color: #8b5cf6;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #8b5cf6;
+  border: 2px solid #8b5cf6;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* === Scroll Indicator === */
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  font-size: 0.85rem;
+  color: #6b7280;
+  animation: anim 1.5s ease-in-out infinite;
+}
+
+.scroll img {
+  width: 20px;
+  margin-top: 5px;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+}
+
+/* === About Section === */
+.about-me {
+  margin-top: 50px;
+  padding: 80px 40px;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #8b5cf6;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About - Left Column */
+.about-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-left h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.about-left p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* About - Right Column */
+.about-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.icon-circle {
+  background-color: #ede9fe;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle img {
+  width: 24px;
+  height: 24px;
+}
+
+.card strong {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* about */
+
+.skills-section {
+  padding: 6rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.skills-title .highlight {
+  color: #007bff; /* mimic text-primary */
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.progress-bar-bg {
+  background-color: #ccc;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 1.5s ease-out;
+}
+
+.percent-label {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* skill */
+.projects-section {
+  background-color: #f8f9fc;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #7c3aed; /* purple-600 */
+}
+
+.section-description {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  color: #4b5563; /* gray-700 */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  background-color: #f3f4f6; /* gray-100 */
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  color: #1f2937; /* gray-900 */
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827; /* gray-900 */
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #4b5563; /* gray-700 */
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #6b7280; /* gray-600 */
+}
+
+.project-links a:hover {
+  color: #7c3aed; /* purple-600 */
+}
+
+.github-button-wrapper {
+  margin-top: 2rem;
+}
+
+.github-button {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #6d28d9; /* darker purple */
+}
